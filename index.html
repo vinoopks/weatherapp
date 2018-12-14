@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="vinoopks">
+    <meta name="keywords" content="weather online">
+    <title>
+        Find Weather Web Application
+    </title>
+    <link rel="stylesheet" href="css/screen.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/script.js" type="text/javascript">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="weatherdiv">
+        <div>
+            <div id="heading" class="allign-left header">
+                <i class="material-icons home toggle-menu" id="nav-button" style="font-size:110%" onclick="navAction();">menu</i>
+                <span id="appname">WeatherCast</span>
+                <!--Below span is only visible for Users wih large screens, like computers-->
+                <span class="mobileHide">
+                    <input type="text" placeholder="City Name" id="header-search-bx"  class="input-bx" >
+                    <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+                </span>
+
+            </div>
+
+
+            <div id="sideNav" class="sidenav shadow-nav">
+                <a href="javascript:void(0)" disabled="disabled" class="closebtn" onclick="closeNav();noblurContent();">&times;</a>
+            </div>
+
+            <div id="content" class="shadow content  allign-center curved-border ">
+                <div class=" mobileShow">
+                    <span >
+                      <input id="content-search-bx" type="text" placeholder="City Name"  class="input-bx">
+
+
+                    </span>
+
+                </div>
+                <div id="tempDiv" class="desc-container">
+                  <p id="tempMain">
+                  <span id="temp" class="temp-class">32</span>
+                  <span id="scaleMain" class="temp-class">&deg</span>
+</p>
+
+                  <p id="tempDesc">
+                  <span id="weatherType">Storm</spam>
+                  <span id="tempHigh">35&deg/<span>
+                    <span id="tempLow">25&deg</span>
+                    <span id="scaleDesc">C</span>
+
+                  </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+    </script>
+
+</body>
+
+
+</html>
